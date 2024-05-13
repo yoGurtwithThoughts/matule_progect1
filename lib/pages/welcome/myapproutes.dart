@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:matule_progect1/pages/welcome/onboarding1.dart';
 import 'package:matule_progect1/pages/welcome/onboarding2.dart';
+import 'package:matule_progect1/pages/welcome/onboarding3.dart';
+import 'package:matule_progect1/pages/welcome/spalashcreen.dart';
 
 
 class MyApp extends StatelessWidget {
@@ -12,8 +14,10 @@ class MyApp extends StatelessWidget {
      debugShowCheckedModeBanner: false,
     initialRoute: '/',
     routes: {
-     '/' : (context) =>  const Onboarding1Pag(),
+     '/' : (context) =>  SplashScreen(),
+     '/nb1' : (context) =>  const Onboarding1Pag(),
      '/nb2':(context) => const Onboarding2Page(),
+     '/nb3':(context) => const Onboarding3Page(),
     },
     );
   }

@@ -1,41 +1,45 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:matule_progect1/widgets/button.dart';
-class Onboarding2Page extends StatefulWidget {
-  const Onboarding2Page({super.key});
+
+
+class Onboarding3Page extends StatefulWidget {
+  const Onboarding3Page({super.key});
 
   @override
-  State<Onboarding2Page> createState() => _Onboarding2PageState();
+  State<Onboarding3Page> createState() => _Onboarding3PageState();
 }
 
-class _Onboarding2PageState extends State<Onboarding2Page> {
+class _Onboarding3PageState extends State<Onboarding3Page> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
        backgroundColor: Color.fromRGBO(72, 178, 231, 1),
        body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget> [
             Padding(
-             padding: const EdgeInsets.only(top: 85, left: 50),
+             padding: const EdgeInsets.only(top: 85, left: 40),
              child: Container(
-            width: 300,
-              child: SvgPicture.asset('assets/images/bannerelm2.svg'),
+            alignment: Alignment.topLeft,
+              child: SvgPicture.asset('assets/images/Misc_04.svg',
+              height: 50,
+              width: 50,),
              ),
            ),
            
            Padding(
-             padding: const EdgeInsets.only( left: 50),
-             child: Image.asset('assets/images/contentbanner2.png',
+             padding: const EdgeInsets.only( left: 30),
+             child: Image.asset('assets/images/banner3.png',
              width: 300,),
            ),
            const SizedBox(height: 15,),
            Padding(
-             padding: const EdgeInsets.only(left: 50),
+             padding: const EdgeInsets.only(left: 25),
              child: RichText( 
               text: const  TextSpan(
-                          text: 'Начнем\nпутешествие ',
+                          text: 'У Вас Есть Сила, Чтобы ',
                           style: TextStyle(
                               fontSize: 34,
                               fontFamily: 'Customfnt',
@@ -45,10 +49,10 @@ class _Onboarding2PageState extends State<Onboarding2Page> {
                               ),
            ),
             Padding(
-             padding: const EdgeInsets.only(left: 50, top: 7),
+             padding: const EdgeInsets.only(left: 25, top: 10),
              child: RichText( 
               text: const  TextSpan(
-                          text: 'Умная, великолепная и модная\n коллекция. Изучите сейчас ',
+                          text: 'В вашей комнате много красивых и привлекательных растений',
                           style: TextStyle(
                               fontSize: 16,
                               fontFamily: 'assets/fonts/Poppins-Regular.ttf',
@@ -57,11 +61,11 @@ class _Onboarding2PageState extends State<Onboarding2Page> {
                               textAlign: TextAlign.center,
                               ),
            ),
-          Padding(padding: EdgeInsets.only(left: 50, top: 30),
+          Padding(padding: EdgeInsets.only(left: 25, top: 40),
          child: Column(
           children: [
-            SvgPicture.asset('assets/images/sliderbanner.svg'),
-            SizedBox(height: 100,),
+            SvgPicture.asset('assets/images/sliderbanner3.svg'),
+            SizedBox(height: 120,),
              Container(
                 height: 55,
                 width: 333,

@@ -30,12 +30,12 @@ class __Onboarding1PagStateState extends State<Onboarding1Pag> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                   Container(
-                  height: 35,
+                 
                   width: 35,
                   child: SvgPicture.asset('assets/images/hig5.svg'),
                 ),
                 
-          const  Padding(padding: EdgeInsets.only(top: 70, left: 5, right: 50),
+          const  Padding(padding: EdgeInsets.only(top: 65, left: 5, right: 50),
                 child: Text('ДОБРО\nПОЖАЛОВАТЬ',
                 style: TextStyle(color:  Color.fromRGBO(236,236,236, 1),
                 fontFamily: 'Customfnt',
@@ -56,9 +56,9 @@ class __Onboarding1PagStateState extends State<Onboarding1Pag> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
               Container(
-                height: 400,
-                width: 300,
-              child:  Image.asset('assets/images/mbanner.png', fit: BoxFit.fill,), ),
+              child:  Image.asset('assets/images/mbanner.png',
+              height: 500,
+              width: 500, fit: BoxFit.cover,), ),
              
               
             ],
@@ -68,7 +68,7 @@ class __Onboarding1PagStateState extends State<Onboarding1Pag> {
                Container(
                 child: SvgPicture.asset('assets/images/banner11.svg' ),
               ),
-          SizedBox(height: 45,),
+          SizedBox(height: 25,),
               Container(
                 height: 55,
                 width: 333,
